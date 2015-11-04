@@ -1,0 +1,19 @@
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+
+  <title>ServiceWorker</title>
+  <script>
+navigator.serviceWorker.register('/service_worker.js').then(function(reg) {
+  console.log('◕‿◕', reg);
+}, function(err) {
+  console.log('ಠ_ಠ', err);
+});
+  </script>
+</head>
+
+<body>
+  <a
+    href="chrome://serviceworker-internals">chrome://serviceworker-internals</a>
+</body>
+</html>
